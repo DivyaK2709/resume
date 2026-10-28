@@ -7,7 +7,7 @@ Open `index.html` in a browser.
 
 ## Deploy on GitHub Pages
 1. Create a new repository on GitHub, e.g. `divyak2709.github.io` (or any name).
-2. Upload everything in this folder (`index.html`, `images/`, `README.md`) to the repository root.
+2. Upload everything in this folder (`index.html` and the `.jpg` images (all in the root)) to the repository root.
 3. Go to **Settings -> Pages**, set **Source** to *Deploy from a branch*, choose branch `main` and folder `/ (root)`, then **Save**.
 4. After a minute the site is live at `https://divyak2709.github.io/` (for a repo named `divyak2709.github.io`) or `https://divyak2709.github.io/<repo-name>/`.
 
