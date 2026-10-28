@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Divya K - Software Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7faf9;--paper:#fff;--ink:#16323f;--body-text:#3c4a4f;--muted:#6b7b80;--line:#dde6e4;--accent:#2b6777;--accent-2:#b57626;--soft:#c98a3e1a;--serif:'Fraunces',Georgia,serif;--sans:'Work Sans',Arial,sans-serif;--mono:'IBM Plex Mono',monospace;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1b20;--paper:#15262d;--ink:#e8f1f2;--body-text:#bccacd;--muted:#8fa3a8;--line:#27404a;--accent:#6fc0d3;--accent-2:#e0a45a;--soft:#e0a45a22;color-scheme:dark}}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);color:var(--body-text);line-height:1.65;background:var(--bg)}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+header{background:var(--paper);border-bottom:1px solid var(--line);padding:16px 20px;position:sticky;top:env(safe-area-inset-top,0px);z-index:10}
+.nav-wrap{max-width:980px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header h1{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--ink)}
+nav ul{list-style:none;display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:var(--muted);font:13px var(--mono);text-transform:uppercase;letter-spacing:.06em}
+nav a:hover{color:var(--accent);text-decoration:none}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:5px 12px;cursor:pointer;font:13px var(--mono);border-radius:3px}
+.hero{text-align:center;padding:72px 20px 0;background:var(--paper)}
+.eyebrow{font:12.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2)}
+.hero h2{font-family:var(--serif);font-size:44px;font-weight:600;color:var(--ink);margin:10px 0 4px}
+.role{color:var(--accent);font:15px var(--mono)}
+.intro{max-width:600px;margin:18px auto 0}
+.btn{display:inline-block;margin:24px 5px 0;padding:11px 26px;border:1.5px solid var(--ink);color:var(--ink);border-radius:3px;font:13.5px var(--mono);transition:.18s}
+.btn:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+.wave{display:block;width:100%;height:48px;margin-top:44px}
+.wave path:first-child{fill:var(--bg)}.wave path:last-child{fill:none;stroke:var(--accent);stroke-opacity:.35;stroke-width:1.5}
+.container{max-width:980px;margin:0 auto;padding:0 24px 40px}
+section{padding:50px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+.sec-num{font:13px var(--mono);color:var(--accent-2)}
+h2.title{font-family:var(--serif);font-size:27px;font-weight:600;color:var(--ink)}
+.edu-item{margin-bottom:20px;padding-left:16px;border-left:2px solid var(--line)}
+.degree{font:600 16.5px var(--serif);color:var(--ink)}
+.meta{color:var(--muted);font:13.5px var(--mono);margin-top:3px}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px 30px}
+.skill-group h4{font:12px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:8px}
+.job{margin-bottom:30px;position:relative;padding-left:20px}
+.job::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--accent-2)}
+.job-title{font:600 17px var(--serif);color:var(--ink)}
+.job-meta{color:var(--muted);font:13px var(--mono);margin:4px 0 10px}
+.job ul{margin-left:20px}.job li{margin-bottom:6px}
+.note{font-size:14px;color:var(--muted);border-top:1px dashed var(--line);padding-top:18px}
+.note strong{color:var(--ink)}
+.subheading{font:12.5px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:30px 0 14px}
+.subheading:first-of-type{margin-top:0}
+.project{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);padding:20px 22px;margin-bottom:18px;border-radius:4px}
+.project h4{font:600 18px var(--serif);color:var(--ink);margin-bottom:4px}
+.tag{font:12px var(--mono);color:var(--accent-2);margin-bottom:8px}
+.tech{font:12.5px var(--mono);color:var(--muted);margin-top:10px}
+.links{margin-top:10px;display:flex;gap:18px;flex-wrap:wrap;font:13.5px var(--mono)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:4px;background:var(--bg)}
+.gallery figcaption{font:12px var(--mono);color:var(--muted);margin-top:5px}
+.achievement{display:flex;gap:14px;margin-bottom:18px}
+.badge{font:12px var(--mono);color:var(--accent-2);background:var(--soft);border-radius:3px;padding:3px 8px;height:fit-content;margin-top:2px}
+.achievement .title{font:600 16px var(--serif);color:var(--ink)}
+.contact-list{list-style:none}.contact-list li{margin-bottom:10px}
+.contact-list span{display:inline-block;width:90px;color:var(--muted);font:12.5px var(--mono);text-transform:uppercase}
+footer{text-align:center;padding:28px 20px;font:12.5px var(--mono);color:var(--muted);background:var(--paper);border-top:1px solid var(--line)}
+@media(max-width:700px){nav ul{display:none;flex-direction:column;width:100%;margin-top:14px;gap:12px}nav ul.open{display:flex}.menu-btn{display:block}.nav-wrap{flex-direction:column;align-items:flex-start}.top-row{display:flex;justify-content:space-between;width:100%;align-items:center}.hero h2{font-size:32px}}
+</style>
+</head>
+<body>
+<header><div class="nav-wrap"><div class="top-row"><h1>Divya K</h1><button class="menu-btn" id="menuBtn">Menu</button></div>
+<nav><ul id="navList"><li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#achievements">Achievements</a></li><li><a href="#contact">Contact</a></li></ul></nav></div></header>
+
+<div class="hero">
+<div class="eyebrow">Software Developer · Ramanathapuram, India</div>
+<h2>Divya K</h2>
+<p class="role">building things end to end</p>
+<p class="intro">Full-stack developer working at Ynot Software Solutions, with an earlier internship at Kichilli Technologies. I build web apps, desktop billing software and AI-powered systems, with a focus on debugging, optimization and quick learning.</p>
+<a href="#projects" class="btn">View projects</a><a href="https://github.com/divyak2709" target="_blank" rel="noopener" class="btn">GitHub</a>
+<svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,24 C150,48 350,0 600,24 C850,48 1050,0 1200,24 L1200,48 L0,48 Z"/><path d="M0,24 C150,48 350,0 600,24 C850,48 1050,0 1200,24"/></svg>
+</div>
+
+<div class="container">
+<section id="about"><div class="sec-head"><span class="sec-num">01</span><h2 class="title">About Me</h2></div>
+<p>I’m a Software Developer at Ynot Software Solutions, where I joined as an intern and now work on billing and inventory software. Before that I interned at Kichilli Technologies Pvt. Ltd., debugging and optimizing applications and improving stability and user experience by 15%.</p><br>
+<p>I have a strong foundation in programming and web technologies, and I pick up new tools quickly. I’m looking for a Software Developer role where I can contribute to impactful projects and keep growing.</p></section>
+
+<section id="education"><div class="sec-head"><span class="sec-num">02</span><h2 class="title">Education</h2></div>
+<div class="edu-item"><div class="degree">BE, Computer Science &amp; Engineering — 8.2 CGPA</div><div class="meta">Anna University Regional Campus, Madurai · Nov 2022 – Jul 2026</div></div>
+<div class="edu-item"><div class="degree">HSC (12th) — 89.5%</div><div class="meta">Syed Ammal HSC School, Ramanathapuram · Jun 2021 – Mar 2022</div></div>
+<div class="edu-item"><div class="degree">SSLC (10th) — 85%</div><div class="meta">Syed Ammal HSC School, Ramanathapuram · Jun 2019 – Mar 2020</div></div></section>
+
+<section id="skills"><div class="sec-head"><span class="sec-num">03</span><h2 class="title">Skills</h2></div>
+<div class="skills-grid">
+<div class="skill-group"><h4>Web Development</h4><p>HTML5, CSS3, Angular</p></div>
+<div class="skill-group"><h4>Programming Languages</h4><p>C, JavaScript</p></div>
+<div class="skill-group"><h4>Frameworks &amp; Libraries</h4><p>Angular (Basic–Intermediate), Jira</p></div>
+<div class="skill-group"><h4>Backend Framework</h4><p>ASP.NET Core</p></div>
+<div class="skill-group"><h4>Databases &amp; Tools</h4><p>SQL, Git</p></div>
+<div class="skill-group"><h4>Backend Tools</h4><p>Firebase (Basic)</p></div>
+<div class="skill-group"><h4>Core CS</h4><p>Data Structures and Algorithms</p></div>
+<div class="skill-group"><h4>Soft Skills</h4><p>Teamwork, Problem Solving, Communication, Adaptability, Quick Learning</p></div>
+<div class="skill-group"><h4>Languages</h4><p>English, Tamil</p></div>
+</div></section>
+
+<section id="experience"><div class="sec-head"><span class="sec-num">04</span><h2 class="title">Experience</h2></div>
+<div class="job"><div class="job-title">Software Developer</div><div class="job-meta">Ynot Software Solutions, Ramanathapuram</div>
+<ul><li>Working on a .NET billing and inventory management system covering items, purchase, sales, reports and backup.</li><li>Built and published a live company website.</li></ul></div>
+<div class="job"><div class="job-title">Intern</div><div class="job-meta">Ynot Software Solutions, Ramanathapuram</div>
+<ul><li>Built a Library Management System as a VB6 desktop application.</li></ul></div>
+<div class="job"><div class="job-title">Full-stack Developer Intern</div><div class="job-meta">Kichilli Technologies Pvt. Ltd., Coimbatore</div>
+<ul><li>Debugged and optimized software issues, improving application stability and user experience by 15%.</li><li>Developed web application modules aligned with modern coding practices and project requirements.</li><li>Collaborated with team members to integrate APIs and streamline workflows.</li></ul></div>
+<div class="note"><strong>Course:</strong> Full Stack Development Certification. One-month training covering front-end (HTML, CSS, JavaScript, Angular) and backend basics.</div></section>
+
+<section id="projects"><div class="sec-head"><span class="sec-num">05</span><h2 class="title">Projects</h2></div>
+
+<p class="subheading">Final Year Project</p>
+<div class="project"><h4>SmartMarineNav</h4><div class="tag">AI-Powered Marine Waste Detection System</div>
+<p>An end-to-end AI pipeline that detects floating marine debris in satellite imagery using YOLOv8, extracts the geo-coordinates of detected waste, finds the nearest cleanup port with the Haversine formula, and computes vessel dispatch routes. A Flask REST API backend feeds a real-time Streamlit dashboard with live alerts and analytics.</p>
+<div class="gallery"><figure><img src="images/smartmarinenav-dashboard.jpg" alt="SmartMarineNav dashboard overview" loading="lazy"><figcaption>Dashboard overview</figcaption></figure><figure><img src="images/smartmarinenav-map.jpg" alt="Waste locations and dispatch routes map" loading="lazy"><figcaption>Locations, routes and alerts</figcaption></figure><figure><img src="images/smartmarinenav-charts.jpg" alt="Waste count and type charts" loading="lazy"><figcaption>Analytics</figcaption></figure></div>
+<p class="tech">Tech: YOLOv8, Flask, Streamlit, Python</p>
+<div class="links"><a href="https://drive.google.com/file/d/1XwEpVTvmOd7uEgczPMPg9FNsOf5j10yP/view?usp=sharing" target="_blank" rel="noopener">Watch demo video →</a></div></div>
+
+<p class="subheading">Work Projects · Ynot Software Solutions</p>
+<div class="project"><h4>Billing &amp; Inventory Management System</h4><div class="tag">.NET desktop software · built at work</div>
+<div class="gallery"><figure><img src="images/billing-dashboard.jpg" alt="Billing software dashboard" loading="lazy"><figcaption>Dashboard</figcaption></figure><figure><img src="images/billing-items.jpg" alt="Items master screen" loading="lazy"><figcaption>Items</figcaption></figure><figure><img src="images/billing-sales.jpg" alt="Sales billing screen" loading="lazy"><figcaption>Sales billing</figcaption></figure></div></div>
+<div class="project"><h4>Company Website</h4><div class="tag">Designed, built and published</div>
+<div class="links"><a href="https://divyak2709.github.io/https-fiopteltd.com-website-/" target="_blank" rel="noopener">Live website →</a></div></div>
+
+<p class="subheading">Internship Projects</p>
+<div class="project"><h4>Library Management System</h4><div class="tag">VB6 desktop application · Ynot Software Solutions</div>
+<div class="gallery"><figure><img src="images/library-home.jpg" alt="Library Management System home screen" loading="lazy"><figcaption>Home screen</figcaption></figure><figure><img src="images/library-borrower.jpg" alt="Borrower entry form" loading="lazy"><figcaption>Borrower form</figcaption></figure></div>
+<p class="tech">Tech: VB6</p></div>
+<div class="project"><h4>Quiz Application (Vina Vidai)</h4><div class="tag">Kichilli Technologies Pvt. Ltd.</div>
+<p>A quiz app with real-time scoring, authentication and mobile responsiveness, with separate user and admin sides.</p>
+<p class="tech">Tech: Angular, Ionic, Node.js, Firebase</p>
+<div class="links"><a href="https://divyak2709.github.io/vina-vidai-user/" target="_blank" rel="noopener">Live: user app →</a><a href="https://divyak2709.github.io/vina-vidai-admin1/" target="_blank" rel="noopener">Live: admin app →</a></div></div>
+
+<p class="subheading">Academic Projects</p>
+<div class="project"><h4>Smart Route Clean (EcoRoute)</h4><div class="tag">Student innovation project · third year</div>
+<p>A map-based waste bin tracker. Bin locations, waste type and fill level are stored in a Supabase database and shown as markers on a Leaflet map, with a popup for each bin.</p>
+<div class="gallery"><figure><img src="images/ecoroute-map.jpg" alt="EcoRoute map with bin markers" loading="lazy"><figcaption>Bin map</figcaption></figure><figure><img src="images/supabase-bins.jpg" alt="Supabase bins table" loading="lazy"><figcaption>Supabase bins table</figcaption></figure></div>
+<p class="tech">Tech: Supabase, Leaflet, JavaScript</p></div>
+<div class="project"><h4>Railway Reservation System</h4><div class="tag">Mini project</div>
+<p>A full-stack ticket booking web app with train search and an IRCTC-style responsive UI.</p>
+<p class="tech">Tech: HTML, CSS, JavaScript, Node.js, MongoDB</p></div>
+</section>
+
+<section id="achievements"><div class="sec-head"><span class="sec-num">06</span><h2 class="title">Achievements</h2></div>
+<div class="achievement"><span class="badge">1st</span><div><div class="title">Protofusion Event</div><div>Won first place in the interdepartmental project competition at Anna University Regional Campus, Madurai, for developing and presenting an innovative project.</div></div></div>
+<div class="achievement"><span class="badge">3rd</span><div><div class="title">Thinkathan Event</div><div>Secured third place in a problem-solving and ideation event at Anna University Regional Campus, Madurai.</div></div></div></section>
+
+<section id="contact" style="border-bottom:none"><div class="sec-head"><span class="sec-num">07</span><h2 class="title">Contact</h2></div>
+<ul class="contact-list"><li><span>Email</span> <a href="mailto:kdivya2k20@gmail.com">kdivya2k20@gmail.com</a></li><li><span>Phone</span> <a href="tel:+916382229881">+91 63822 29881</a></li><li><span>GitHub</span> <a href="https://github.com/divyak2709" target="_blank" rel="noopener">github.com/divyak2709</a></li><li><span>Location</span> Ramanathapuram, Tamil Nadu — 625019</li></ul></section>
+</div>
+<footer>© 2026 Divya K</footer>
+<script>
+document.getElementById('menuBtn').addEventListener('click',function(){document.getElementById('navList').classList.toggle('open')});
+document.querySelectorAll('nav a').forEach(function(l){l.addEventListener('click',function(){document.getElementById('navList').classList.remove('open')})});
+</script>
+</body>
+</html>
